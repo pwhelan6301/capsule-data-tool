@@ -10,7 +10,7 @@ st.write("A tool to help clean and enrich CSV exports from Capsule CRM.")
 
 with st.expander("📖 How to Use This Tool", expanded=True):
     st.markdown("""
-    ### Clean from Tags 🧹
+    ### Clean from Tags 
     This option automatically fills in the 'Sector' and 'Category' columns in your file by reading the 'Tags' column.
 
     1.  **Select Your File**: In the main panel, click the "Browse files" button and select the CSV file you want to clean.
@@ -21,7 +21,7 @@ with st.expander("📖 How to Use This Tool", expanded=True):
 
     ---
 
-    ### Enrich from Master File 🤝
+    ### Enrich from Master File 
     This option uses a correct "master" list of organisations to fill in missing 'Sector' and 'Category' information in a "target" file.
 
     1.  **Upload Master File**: This is your source of truth. Use the first "Browse files" button to upload your master list of organisations.
@@ -145,4 +145,5 @@ elif mode == "Enrich from Master":
             )
 
 st.sidebar.markdown("---")
+
 st.sidebar.info("This app is powered by Streamlit.")
